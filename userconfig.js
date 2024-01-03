@@ -3,7 +3,7 @@ let saved_config = JSON.parse(localStorage.getItem("CONFIG"));
 const default_config = {
   overrideStorage: true,
   temperature: {
-    location: "London",
+    location: "João Pessoa, Paraíba",
     scale: "C",
   },
   clock: {
@@ -12,13 +12,13 @@ const default_config = {
   },
   search: {
     engines: {
-      g: ["https://google.com/search?q=", "Google"],
-      d: ["https://duckduckgo.com/html?q=", "DuckDuckGo"],
+      g: ["https://google.com.br/search?q=", "Google"],
+      y: ['https://youtube.com/results?search_query=', 'Youtube'],
     },
   },
   keybindings: {
     s: "search-bar",
-    // q: "config-tab",
+    q: "config-tab",
   },
   disabled: [],
   fastlink: "https://app.raindrop.io",
@@ -265,4 +265,3 @@ const default_config = {
 };
 
 const CONFIG = new Config(saved_config ?? default_config);
-// const CONFIG = new Config(default_config);
